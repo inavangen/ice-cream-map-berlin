@@ -81,9 +81,9 @@ onMounted(() => {
     <!-- Map view and pins -->
     <div style="height: 600px; width: 100%; border: 3px solid #D93EDE; border-radius: 8px; overflow: hidden;">
       <l-map ref="map" v-model:zoom="zoom" v-model:center="center" :useGlobalLeaflet="false">
-      <l-tile-layer url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+      <l-tile-layer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
                     layer-type="base"
-                    name="Stadia Maps Basemap"></l-tile-layer>
+                    name="Open Free Map"></l-tile-layer>
       
       <l-marker v-for="(arcade, index) in arcades.features" 
                 :key="index"
@@ -102,7 +102,6 @@ onMounted(() => {
         </l-popup>
       </l-marker>
     </l-map>
-
     </div>
   </section>
 
