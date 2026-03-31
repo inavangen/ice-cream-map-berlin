@@ -74,7 +74,7 @@ onMounted(() => {
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
     </div>
     <div>
-      <h1>EIS EIS BABY</h1>
+      <h1>EIS EIS BABY!</h1>
       <p>A map over Rebecca's favorite Ice Creams in Berlin</p>
     </div>
     
