@@ -8,14 +8,17 @@ import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
 
 import L from "leaflet"
 
-// POI icon paths 
-delete (L.Icon.Default.prototype as any)._getIconUrl
-L.Icon.Default.mergeOptions({
-  //iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  //iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  iconRetinaUrl: '../assets/marker2x.png',
-  iconUrl: '../assets/marker2x.png',
+import customMarker from '../assets/marker2x.png'
+
+// Create custom icon 
+const customIcon = L.icon({
+  iconUrl: customMarker,
+  iconSize: [38, 62],    // [50*0.75=37.5≈38, 82*0.75=61.5≈62]
+  iconAnchor: [19, 62],  // [25*0.75=18.75≈19, 82*0.75=61.5≈62]
+  popupAnchor: [0, -53], // [0, -70*0.75=-52.5≈-53]
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+  shadowSize: [31, 31],  // [41*0.75=30.75≈31]
+  shadowAnchor: [9, 31]  // [12*0.75=9, 41*0.75=30.75≈31]
 })
 
 import arcades from "./arcades.json"
@@ -89,7 +92,9 @@ onMounted(() => {
       
       <l-marker v-for="(arcade, index) in arcades.features" 
                 :key="index"
-                :lat-lng="getCoordinates(arcade.geometry.coordinates)">
+                :lat-lng="getCoordinates(arcade.geometry.coordinates)"
+                :icon="customIcon">
+
         <l-popup>
           <div class="popup-content">
             <h3>{{ arcade.properties.name }}</h3>
@@ -150,33 +155,31 @@ onMounted(() => {
 
   <section id="next-steps">
     <div id="docs">
-      <svg class="icon" role="presentation" aria-hidden="true">
+      <!-- <svg class="icon" role="presentation" aria-hidden="true">
         <use href="/icons.svg#documentation-icon"></use>
-      </svg>
+      </svg>-->
       <h2>Who's behind this?</h2>
       <p>Rebecca and Ina. Suggest where we should go next? </p>
       <ul>
         <li>
           <a href="https://vite.dev/" target="_blank">
-            <img class="logo" :src="viteLogo" alt="" />
+            <!-- <img class="logo" :src="viteLogo" alt="" />-->
             Let us know!
           </a>
         </li>
       </ul>
     </div>
     <div id="social">
-      <svg class="icon" role="presentation" aria-hidden="true">
+      <!-- <svg class="icon" role="presentation" aria-hidden="true">
         <use href="/icons.svg#social-icon"></use>
-      </svg>
+      </svg>-->
       <h2>Support the ice creams</h2>
       <p>Ice creams are expensive. You can support our adventure to buy more ice creams</p>
       <ul>
         <li>
-          <a href="https://github.com/vitejs/vite" target="_blank">
-            <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#github-icon"></use>
-            </svg>
-            Buy us an ice cream (coffee)
+          <a href="https://vite.dev/" target="_blank">
+            <!-- <img class="logo" :src="viteLogo" alt="" />-->
+            Buy us an ice cream!
           </a>
         </li>
 

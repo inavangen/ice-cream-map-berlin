@@ -31,6 +31,7 @@
         "date": "11.11.2026",
         "address": "Warschauer Str. 12, 10243 Berlin",
         "description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "image_url": "/images/testimage.png",
         "rating": "5/5"
       },
       "geometry": {
@@ -49,6 +50,7 @@
         "date": "11.11.2026",
         "address": "Gärtnerstraße 2, 10245 Berlin",
         "description": "Is it the Belgian 12 % beer? Is my memory failing me because of old(er) age? When I finally had a moment to write this review I could not remember which flavours I had at Natur Eis Berlin-Friedrichshain 🙁 I had to message my soulmate Kevin to see if he could remember. As I wait for his reply I would like to start by saying that the ice cream was really, really good and that the staff are the cutest. It's also great to support this kinda family run place compared to the chain across the street ✨ The fact that I have such a great feeling about this place without even remembering which flavours I had gives a pretty high grade already. And you guys, the ice cream is stored in these round buckets, which happens to be how all great gelato I've ever had has been stored. However, the cones aren't great because they kinda taste like cardboard. Still more environmentally friendly than cups tho, so I would still suggest having your yummie ice cream with a cone. You guys, the text from Kevin just came in! This is all happening live! I had something with orange, which is true. It's all (partly) coming back to me! This orange scoop was beautiful, fresh and still creamy. With that I had (99% sure) peanut with some kind of chocolate. Either way it was great and Kevin's salty caramel was yummie. His cream was meh though, which was a shame. What this very honest reflection of the current state of my memory is showing us all (apart from the fact that it sucks) is that it doesn't matter which flavour you get here, it's gonna be great either way! But stay away from the cream and be prepared for a boring cone.",
+        "image_url": "/images/testimage.png",
         "rating": "8/10"
       },
       "geometry": {
