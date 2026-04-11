@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "All reviews are written by Rebecca.",
-  "timestamp": "2023-02-07T09:21:34Z",
+  "getlatlongfrom": "https://www.gps-coordinates.net/",
   "features": [
     {
       "type": "Feature",
@@ -50,7 +50,7 @@
         "date": "11.11.2026",
         "address": "Gärtnerstraße 2, 10245 Berlin",
         "description": "Is it the Belgian 12 % beer? Is my memory failing me because of old(er) age? When I finally had a moment to write this review I could not remember which flavours I had at Natur Eis Berlin-Friedrichshain 🙁 I had to message my soulmate Kevin to see if he could remember. As I wait for his reply I would like to start by saying that the ice cream was really, really good and that the staff are the cutest. It's also great to support this kinda family run place compared to the chain across the street ✨ The fact that I have such a great feeling about this place without even remembering which flavours I had gives a pretty high grade already. And you guys, the ice cream is stored in these round buckets, which happens to be how all great gelato I've ever had has been stored. However, the cones aren't great because they kinda taste like cardboard. Still more environmentally friendly than cups tho, so I would still suggest having your yummie ice cream with a cone. You guys, the text from Kevin just came in! This is all happening live! I had something with orange, which is true. It's all (partly) coming back to me! This orange scoop was beautiful, fresh and still creamy. With that I had (99% sure) peanut with some kind of chocolate. Either way it was great and Kevin's salty caramel was yummie. His cream was meh though, which was a shame. What this very honest reflection of the current state of my memory is showing us all (apart from the fact that it sucks) is that it doesn't matter which flavour you get here, it's gonna be great either way! But stay away from the cream and be prepared for a boring cone.",
-        "image_url": "/images/testimage.png",
+        "image_url": "/images/natur-eis-fhain.jpg",
         "rating": "8/10"
       },
       "geometry": {
@@ -60,7 +60,26 @@
         ]
       },
       "id": "node/344125433"
-    }  
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/344125433",
+        "name": "Delabuu Ice",
+        "date": "22.04.2019",
+        "address": "Krossener Str. 15, 10245 Berlin, Germany",
+        "description": "This one's long overdue, sorry for that my lovley Eis-fans 🙁 Maybe it wasn't the sunniest March day (compared to this beautiful Easter weekend!), but there is no need for sun to enjoy ice cream! Especially not speciality ice cream such as these ice cream rolls. And sometimes you need a lil reward after making a million decisions about shelves at Hellweg (they turned out great, message for a pic)✨ We sure got a sugar kick from these rolls seeing as they pretty much were 50 % ice cream and 50 % candy toppings. If cold sweetness is what you want, this is your place. I might stick to my new conservative path in life and opt for gelato tho and then have my candy on the side (especially seeing as one serving of rolls is about 5 euros). However, I did enjoy trying something new and in hindsight another choice of toppings could have made the rolls tastier. For me, the ice cream itself wasn't too exciting, but it can probably be spiced up by adding other toppings. Beware of possibly being overwhelmed by all the possible combinations though. Bring a supportive friend to discuss your options in case decision making isn't your thing.",
+        "image_url": "/images/delabuu-ice.jpg",
+        "rating": "7/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.51017379760742,13.460822105407715
+        ]
+      },
+      "id": "node/344125433"
+    }   
   ]
 }
 

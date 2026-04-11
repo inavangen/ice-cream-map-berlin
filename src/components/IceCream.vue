@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import heroImg from '../assets/hero.png'
 
 import "leaflet/dist/leaflet.css"
@@ -12,37 +12,40 @@ import customMarker from '../assets/marker2x.png'
 // Create custom icon 
 const customIcon = L.icon({
   iconUrl: customMarker,
-  iconSize: [38, 62],    // [50*0.75=37.5≈38, 82*0.75=61.5≈62]
-  iconAnchor: [19, 62],  // [25*0.75=18.75≈19, 82*0.75=61.5≈62]
-  popupAnchor: [0, -53], // [0, -70*0.75=-52.5≈-53]
+  iconSize: [38, 62],
+  iconAnchor: [19, 62],
+  popupAnchor: [0, -53],
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-  shadowSize: [31, 31],  // [41*0.75=30.75≈31]
-  shadowAnchor: [9, 31]  // [12*0.75=9, 41*0.75=30.75≈31]
+  shadowSize: [31, 31],
+  shadowAnchor: [9, 31]
 })
 
 import arcades from "./arcades.json"
 
 let zoom = ref(15)
-// Fix: Define center as a tuple with exactly 2 numbers
 let center = ref<[number, number]>([52.511439, 13.468885])
 
 // Modal state
 const showModal = ref(false)
 const selectedLocation = ref<any>(null)
 
-// Placeholder image URL (you can replace this with your own placeholder)
+// Placeholder image URL
 const placeholderImage = "https://via.placeholder.com/400x200/4CAF50/ffffff?text=Ice+Cream+Shop"
 
 // Open modal with selected location data
 const openModal = (location: any) => {
   selectedLocation.value = location
   showModal.value = true
+  // Prevent body scroll on mobile
+  document.body.classList.add('modal-open')
 }
 
 // Close modal
 const closeModal = () => {
   showModal.value = false
   selectedLocation.value = null
+  // Re-enable body scroll
+  document.body.classList.remove('modal-open')
 }
 
 // Get image URL from location properties or use placeholder
@@ -55,7 +58,6 @@ const getImageUrl = (location: any) => {
 
 // Helper function to convert coordinates to tuple
 const getCoordinates = (coordinates: number[]): [number, number] => {
-  // Coordinates from GeoJSON are [lng, lat], so we need to reverse to [lat, lng] for Leaflet. Use .reverse() behind .slice() if needed
   const reversed = coordinates.slice()
   if (reversed.length !== 2) {
     console.error('Invalid coordinates:', coordinates)
@@ -64,7 +66,23 @@ const getCoordinates = (coordinates: number[]): [number, number] => {
   return [reversed[0], reversed[1]] as [number, number]
 }
 
-// Debug: Check if data is loading
+// Handle escape key to close modal
+const handleEscapeKey = (event: KeyboardEvent) => {
+  if (event.key === 'Escape' && showModal.value) {
+    closeModal()
+  }
+}
+
+// Watch for modal visibility to add/remove event listeners
+watch(showModal, (newVal) => {
+  if (newVal) {
+    document.addEventListener('keydown', handleEscapeKey)
+  } else {
+    document.removeEventListener('keydown', handleEscapeKey)
+  }
+})
+
+// Clean up event listeners on component unmount
 onMounted(() => {
   console.log('Arcades data:', arcades)
   console.log('Number of features:', arcades.features?.length)
@@ -83,60 +101,73 @@ onMounted(() => {
     </div>
     
     <!-- Map view and pins -->
-    <div style="height: 600px; width: 100%; border: 3px solid #D93EDE; border-radius: 8px; overflow: hidden;">
+    <div style="height: 600px; width: 100%; border: 4px solid #A34390; border-radius: 12px; overflow: hidden;">
       <l-map ref="map" v-model:zoom="zoom" v-model:center="center" :useGlobalLeaflet="false">
-      <l-tile-layer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    layer-type="base"
-                    name="Open Free Map"></l-tile-layer>
-      
-      <l-marker v-for="(arcade, index) in arcades.features" 
-                :key="index"
-                :lat-lng="getCoordinates(arcade.geometry.coordinates)"
-                :icon="customIcon">
-
-        <l-popup>
-          <div class="popup-content">
-            <h3>{{ arcade.properties.name }}</h3>
-            <i> {{ arcade.properties.address }}</i> <br></br><br></br>
-            <span class="description">{{ arcade.properties.description }}</span><br></br>
-            <b>Rating: </b> {{ arcade.properties.rating }}<br></br>
-            <br />
-            <button class="popup-button" @click="openModal(arcade)">
-              More Info
-            </button>
-          </div>
-        </l-popup>
-      </l-marker>
-    </l-map>
+        <l-tile-layer 
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          layer-type="base"
+          name="Open Free Map"
+        ></l-tile-layer>
+        
+        <l-marker 
+          v-for="(arcade, index) in arcades.features" 
+          :key="index"
+          :lat-lng="getCoordinates(arcade.geometry.coordinates)"
+          :icon="customIcon"
+        >
+          <l-popup>
+            <div class="popup-content">
+              <!-- Circular thumbnail -->
+              <div class="popup-thumbnail-wrapper">
+                <img 
+                  :src="getImageUrl(arcade)"
+                  alt="Arcade thumbnail"
+                  class="popup-circular-thumb"
+                />
+              </div>
+              
+              <b>{{ arcade.properties.name }}</b><br>
+              <i>{{ arcade.properties.address }}</i> <br><br>
+              <span class="description">{{ arcade.properties.description }}</span><br>
+              <b>Rating: </b> {{ arcade.properties.rating }}
+              
+              <!-- Pink "Read full review" button -->
+              <button class="popup-button" @click="openModal(arcade)">
+                Read full review
+              </button>
+            </div>
+          </l-popup>
+        </l-marker>
+      </l-map>
     </div>
   </section>
 
-  <!-- Pop up Modal -->
-  <div v-if="showModal" class="modal-overlay" @click="closeModal">
-    <div class="modal-content" @click.stop>
+  <!-- Pop up Modal  -->
+<div v-if="showModal" class="modal-overlay" @click.self="closeModal">
+  <div class="modal-container">
+    <div class="modal-content">
+      <button class="modal-close" @click="closeModal">&times;</button>
+      
       <div class="modal-header">
         <h2>{{ selectedLocation?.properties?.name || 'Location Details' }}</h2>
-        <button class="modal-close" @click="closeModal">&times;</button>
       </div>
       
-      <!-- Image -->
-      <div class="modal-image-container">
+      <!-- Image in larger popup -->
+      <div class="modal-image-wrapper">
         <img 
-          :src="getImageUrl(selectedLocation)" 
-          :alt="selectedLocation?.properties?.name || 'Ice Cream Shop'"
-          class="modal-image"
-          @error="(e) => (e.target as HTMLImageElement).src = placeholderImage"
-          />
-      </div> 
+          :src="getImageUrl(selectedLocation)"
+          alt="Location image"
+          class="modal-large-image"
+        />
+      </div>
       
       <div class="modal-body">
-        <!-- Add more properties based on your data structure -->
         <p><strong>Date of visit:</strong> {{ selectedLocation?.properties?.date || 'Date not found' }}</p>
         <p><strong>Address:</strong> {{ selectedLocation?.properties?.address || 'Address not specified' }}</p>
         <p><strong>Description:</strong> {{ selectedLocation?.properties?.description || 'No description available' }}</p>
         <p><strong>Rating:</strong> {{ selectedLocation?.properties?.rating || 'Information coming soon' }}</p>
         
-        <!-- You can add a link to Google Maps or other external services -->
+        <!-- Google Maps link -->
         <a 
           v-if="selectedLocation"
           :href="`https://www.google.com/maps?q=${selectedLocation.geometry.coordinates[1]},${selectedLocation.geometry.coordinates[0]}`" 
@@ -148,40 +179,32 @@ onMounted(() => {
       </div>
     </div>
   </div>
+</div>
 
   <!-- Information, credits and links here -->
   <div class="ticks"></div>
 
   <section id="next-steps">
     <div id="docs">
-      <!-- <svg class="icon" role="presentation" aria-hidden="true">
-        <use href="/icons.svg#documentation-icon"></use>
-      </svg>-->
       <h2>Who's behind this?</h2>
-      <p>Rebecca and Ina. Suggest where we should go next? </p>
+      <p>This webpage is developed and designed by Ina and reviews are written by Rebecca. Got some feedback, or a suggest to where we should go next?</p>
       <ul>
         <li>
-          <a href="https://vite.dev/" target="_blank">
-            <!-- <img class="logo" :src="viteLogo" alt="" />-->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcuZ-BfYXPTlZ5Fmb_GV5JvcO1baCuWx48Cqc9Kof-3WPSNQ/viewform?usp=publish-editor" target="_blank">
             Let us know!
           </a>
         </li>
       </ul>
     </div>
     <div id="social">
-      <!-- <svg class="icon" role="presentation" aria-hidden="true">
-        <use href="/icons.svg#social-icon"></use>
-      </svg>-->
       <h2>Support the ice creams</h2>
       <p>Ice creams are expensive. You can support our adventure to buy more ice creams</p>
       <ul>
         <li>
           <a href="https://vite.dev/" target="_blank">
-            <!-- <img class="logo" :src="viteLogo" alt="" />-->
             Buy us an ice cream!
           </a>
         </li>
-
       </ul>
     </div>
   </section>
