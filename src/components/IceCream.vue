@@ -198,10 +198,10 @@ onMounted(() => {
     </div>
     <div id="social">
       <h2>Support the ice creams</h2>
-      <p>Ice creams are expensive. You can support our adventure to buy more ice creams</p>
+      <p>Ice creams are expensive. You can support our adventure to buy more ice creams with a small donation!</p>
       <ul>
         <li>
-          <a href="https://vite.dev/" target="_blank">
+          <a href="https://ko-fi.com/ina553388" target="_blank">
             Buy us an ice cream!
           </a>
         </li>
