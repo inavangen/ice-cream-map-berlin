@@ -1,85 +1,206 @@
 {
-  "type": "FeatureCollection",
+  "type": "IceCreamReviewCollection",
   "generator": "overpass-ide",
   "copyright": "All reviews are written by Rebecca.",
   "getlatlongfrom": "https://www.gps-coordinates.net/",
-  "features": [
+  "reviews": [
     {
-      "type": "Feature",
+      "type": "Review",
       "properties": {
-        "@id": "node/344125432",
-        "name": "Peggy Bee - Eiscafé & italienische Bar Berlin",
-        "date": "11.11.2026",        
-        "address": "Weichselstraße 13, 10247 Berlin",
-        "description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        "image_url": "https://www.purina.de/sites/default/files/styles/ttt_image_510/public/2024-01/sitesdefaultfilesstylessquare_medium_440x440public2022-07Chihuahua-Smooth-Coat.jpg?itok=bKDUJJsI",
-        "rating": "4/5"
+        "name": "Empty",
+        "date": "01.01.2025",
+        "address": "Addrerss",
+        "rating": "0/10",
+        "image_url": "/images/favvo-glass.png",
+        "description": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          52.511439, 13.468885
+          55.607867,12.990962
         ]
-      },
-      "id": "node/344125432"
+      }
     },
-     {
-      "type": "Feature",
+
+    {
+      "type": "Review",
       "properties": {
-        "@id": "node/344125431",
-        "name": "Chipi Chipi Bombón",
-        "date": "11.11.2026",
-        "address": "Warschauer Str. 12, 10243 Berlin",
-        "description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        "image_url": "/images/testimage.png",
-        "rating": "5/5"
+        "name": "Berhain eisbar",
+        "date": "Dec 2016",
+        "address": "Am Wriezener bhf, 10243 Berlin",
+        "rating": "8/10",
+        "image_url": "/images/berghain-eisbar.jpg",
+        "description": "Det kan vara som så att ett par timmars dans förhöjde denna glassupplevelse och eventuellt att mina förväntningar helt ärligt var väldigt låga. Men oj, oj vilken god glass! Jag laddade på med lite energi med choklad och jordgubbsglass. Jordgubbsglassen var bäst av de två medan chokladglassen var något tråkig. Såvitt jag vet så är glassen inte hemmagjord (eller så är kanske Berghain en mysig glassfabrik på vardagarna?), vilket annars är ett krav för denna fantastiska glassresa jag är på. Det är inte varje glass som kan avnjutas till techno dock så det vägde upp för detta och den lite tråkiga chokladglassen och betyget landar ändå på hela 8/10. Det råder fotoförbud så tyvärr kunde jag inte fånga denna glass på bild utan denna orangea klisterlapp som filter, men jag lovar att den ser god ut. Gillar du techno, dans, glass och har vägarna förbi Berlin testa för all del Berghains glass! Tyvärr finns det ingen garanti på att man kommer in och faktiskt har tillfälle att äta denna glass, men det är värt ett försök!"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          52.513256, 13.452527 
+          52.511150,13.441260
         ]
-      },
-      "id": "node/344125431"
+      }
     },
+
     {
-      "type": "Feature",
+      "type": "Review",
       "properties": {
-        "@id": "node/344125433",
+        "name": "Scoop Dessert Parlour",
+        "date": "May 2018",
+        "address": "82 Aungier St, Dublin 2, D02 NP30, Ireland",
+        "rating": "9/10",
+        "image_url": "/images/scoop-dessert.jpg",
+        "description": "Oh wow I'm back, and now in English! Ya'll non-swedish Leute must be thrilled!! So lil explanation of this amazing super scientific research I've been doing for the last few years: I love ice cream and therefore I eat loads of it and review it's taste, structure, consistency, the venue, the staff and the overall experience. Best grade is 10, worst is 0. But let's be real, I've never given any ice cream a grade below 7 really. Obviously cos I don't waste my time going to bad places, but also because I LOVE ice cream.🍦😋😎 \n\nEnough about that, the first ice cream to be rated for the season is this mega tasty one I got at Scoop Dessert Parlour in Dublin 🇮🇪 Despite it being quite cold outside the cute ice cream neon sign lured me inside like a moth to a lit lamp at night. The super friendly staff immediately offered me to try some different flavours. Thanks to this, I got the Pistazie and it was amazing! I usually don't get Pistazie since it can be quite horrible when made badly... I paired the Pistazie with a soft and smooth strawberry sorbet and it was PERFECT! Match made in heaven etc. etc. Also cute lil touch that the top of the waffle was dipped in chocolate 😍 I guess the combination of gelato skills and Irish milk is a pretty good one! The only thing bringing down the grade is that the waffle was a bit boring, despite the chocolate cover, and that the ice cream was quite expensive. However, that is probably Ireland overall and not necessarily this ice cream place only. It is for sure worth a visit if you're in town!! "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.341270,-6.265283
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
         "name": "Natur Eis Berlin Friedrichshain",
         "date": "11.11.2026",
         "address": "Gärtnerstraße 2, 10245 Berlin",
-        "description": "Is it the Belgian 12 % beer? Is my memory failing me because of old(er) age? When I finally had a moment to write this review I could not remember which flavours I had at Natur Eis Berlin-Friedrichshain 🙁 I had to message my soulmate Kevin to see if he could remember. As I wait for his reply I would like to start by saying that the ice cream was really, really good and that the staff are the cutest. It's also great to support this kinda family run place compared to the chain across the street ✨ The fact that I have such a great feeling about this place without even remembering which flavours I had gives a pretty high grade already. And you guys, the ice cream is stored in these round buckets, which happens to be how all great gelato I've ever had has been stored. However, the cones aren't great because they kinda taste like cardboard. Still more environmentally friendly than cups tho, so I would still suggest having your yummie ice cream with a cone. You guys, the text from Kevin just came in! This is all happening live! I had something with orange, which is true. It's all (partly) coming back to me! This orange scoop was beautiful, fresh and still creamy. With that I had (99% sure) peanut with some kind of chocolate. Either way it was great and Kevin's salty caramel was yummie. His cream was meh though, which was a shame. What this very honest reflection of the current state of my memory is showing us all (apart from the fact that it sucks) is that it doesn't matter which flavour you get here, it's gonna be great either way! But stay away from the cream and be prepared for a boring cone.",
+        "rating": "8/10",
         "image_url": "/images/natur-eis-fhain.jpg",
-        "rating": "8/10"
+        "description": "Is it the Belgian 12 % beer? Is my memory failing me because of old(er) age? When I finally had a moment to write this review I could not remember which flavours I had at Natur Eis Berlin-Friedrichshain 🙁 I had to message my soulmate Kevin to see if he could remember. As I wait for his reply I would like to start by saying that the ice cream was really, really good and that the staff are the cutest. It's also great to support this kinda family run place compared to the chain across the street ✨ The fact that I have such a great feeling about this place without even remembering which flavours I had gives a pretty high grade already. And you guys, the ice cream is stored in these round buckets, which happens to be how all great gelato I've ever had has been stored. However, the cones aren't great because they kinda taste like cardboard. Still more environmentally friendly than cups tho, so I would still suggest having your yummie ice cream with a cone. You guys, the text from Kevin just came in! This is all happening live! I had something with orange, which is true. It's all (partly) coming back to me! This orange scoop was beautiful, fresh and still creamy. With that I had (99% sure) peanut with some kind of chocolate. Either way it was great and Kevin's salty caramel was yummie. His cream was meh though, which was a shame. What this very honest reflection of the current state of my memory is showing us all (apart from the fact that it sucks) is that it doesn't matter which flavour you get here, it's gonna be great either way! But stay away from the cream and be prepared for a boring cone."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           52.508388, 13.460209 
         ]
-      },
-      "id": "node/344125433"
+      }
     },
+
     {
-      "type": "Feature",
+      "type": "Review",
       "properties": {
-        "@id": "node/344125433",
         "name": "Delabuu Ice",
-        "date": "22.04.2019",
+        "date": "April 2019",
         "address": "Krossener Str. 15, 10245 Berlin, Germany",
-        "description": "This one's long overdue, sorry for that my lovley Eis-fans 🙁 Maybe it wasn't the sunniest March day (compared to this beautiful Easter weekend!), but there is no need for sun to enjoy ice cream! Especially not speciality ice cream such as these ice cream rolls. And sometimes you need a lil reward after making a million decisions about shelves at Hellweg (they turned out great, message for a pic)✨ We sure got a sugar kick from these rolls seeing as they pretty much were 50 % ice cream and 50 % candy toppings. If cold sweetness is what you want, this is your place. I might stick to my new conservative path in life and opt for gelato tho and then have my candy on the side (especially seeing as one serving of rolls is about 5 euros). However, I did enjoy trying something new and in hindsight another choice of toppings could have made the rolls tastier. For me, the ice cream itself wasn't too exciting, but it can probably be spiced up by adding other toppings. Beware of possibly being overwhelmed by all the possible combinations though. Bring a supportive friend to discuss your options in case decision making isn't your thing.",
+        "rating": "7/10",
         "image_url": "/images/delabuu-ice.jpg",
-        "rating": "7/10"
+        "description": "This one's long overdue, sorry for that my lovley Eis-fans 🙁 Maybe it wasn't the sunniest March day (compared to this beautiful Easter weekend!), but there is no need for sun to enjoy ice cream! \nEspecially not speciality ice cream such as these ice cream rolls. And sometimes you need a lil reward after making a million decisions about shelves at Hellweg (they turned out great, message for a pic)✨ We sure got a sugar kick from these rolls seeing as they pretty much were 50 % ice cream and 50 % candy toppings. If cold sweetness is what you want, this is your place. I might stick to my new conservative path in life and opt for gelato tho and then have my candy on the side (especially seeing as one serving of rolls is about 5 euros). However, I did enjoy trying something new and in hindsight another choice of toppings could have made the rolls tastier. For me, the ice cream itself wasn't too exciting, but it can probably be spiced up by adding other toppings. Beware of possibly being overwhelmed by all the possible combinations though. Bring a supportive friend to discuss your options in case decision making isn't your thing."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           52.51017379760742,13.460822105407715
         ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Syster Jakobs glass",
+        "date": "Sept 2025",
+        "address": "Klostergatan 11, 222 22 Lund, Sverige",
+        "rating": "7/10",
+        "image_url": "/images/syster-jacobs.png",
+        "description":"Went further than just the other Kiez the other day for some Eis. I spontaneously jumped into this cute shop in Lund 🇸🇪 and ”Syster Jakobs glass och konfektyr” did not disappoint! Perhaps not quite the same kind of fancy experience as the last place, but the brown butter was amazing and could for sure have been part of that flavour packed experience. AND this was super creamy 🤤\n\nIt was also fun to see that the student traditions of Lund had made it into the ice cream shop since this one was called Malmö Nation’s brown butter (don’t ask me what this nation thing really is about since I didn’t study in one of those student towns). \n\nThe staff wasn’t that accommodating and didn’t pick up on my ice cream small talk, but it was the end of the day so I can imagine they were mentally already having a beer with their new student friends. Which I guess is a lot more fun than serving me ice cream 🤷‍♀️ \n\nThe other flavour I had didn’t really work for me although it had lots of potential. Apple crumble sounded like a great pairing to that brown butter but there was a hint of a funny almost peppermint like flavour that didn’t quite vibe with me. I liked the crumble bits though since I like a bit of texture in my ice cream, but unfortunately this one and the tired staff brought the grade down to a 7/10 (brown butter was 10/10 tho)."
       },
-      "id": "node/344125433"
-    }   
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.7039229,13.1897515
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Kuremie",
+        "date": "30.08.2025",
+        "address": "Adalbertstraße 23, Waldemarstraße 48, 10997 Berlin",
+        "rating": "10/10",
+        "image_url": "/images/kuremie.png",
+        "description": "After several and frequent visits to the ice cream places close to home over the summer, it was time for a trip to another Kiez to explore new spots. At Kuréme (@thisiskureme) they really know flavours! Every one that we got to try were beautiful and I can’t wait to be back to try more 😍 The staff was so friendly and since it was our first time, we got to taste their top sellers. I ended up taking two of these: mango sticky rice and mandarin sorbet. Very nice and fresh, and the mango sticky rice had a nice texture experience from actual pieces of \n\n Not only do they know flavours, they also take the flavour experience seriously. Although we got our samples on wooden spoons they later offered us some kind of paper spoons since the wood eventually starts to give off a wooden flavour that doesn’t mix well with the ice cream. I appreciated this since wood ice cream still hasn’t made it to the top of my list. A very nice touch, ensuring our ice cream will taste the best 😊\n\nMy cute friends got viet coffee, black sesame and ube. All were great!! We’re not sure if the matcha glaze really added anything though so I’d recommend to focus on plain flavours, unless you want a cool pic for your influencer career. \n\nYou might wonder why this isn’t a 10/10 with those amazing flavours? Well the texture was a bit too much on the icy watery side for my liking. I’m a big fan of smooth creaminess 🤤"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.50368118286133, 13.420980453491211
+        ]
+      }
+    },
+    
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Favvo Glass",
+        "date": "08.05.2025",
+        "address": "Gibraltargatan 6, 211 18 Malmö, Sverige",
+        "rating": "10/10",
+        "image_url": "/images/favvo-glass.png",
+        "description": "TLDR? 10/10 ice cream in Malmö @favvoglass! Also too long for Instagram so for the brave ones, review continues in the comments 😎After getting some compliments about my long lost ice cream “blog” and a big push from my mom in that way only a mom can, I’m back with a yummy post! Since I’m not happy with the original ice cream blog platform (Facebook) nor Instagram posts we’ll see where I end up in the future. Maybe an actual blog?? Until then, enjoy the cross posting across platforms!!\n\n Okay so this ice cream place in Malmö is really really good and I HIGHLY recommend! Favvo Glass is for sure my new “favvo” (favourite) ice cream place. It’s home made right next to where they scoop up those delicious scoops of creamy pleasure 😍 We love!! Also at least the rhubarbs and black currants are locally sourced. We love even more!! I’m lowkey considering getting another train ticket and risk getting stuck yet again at Malmö central station to go back and try more flavours 😋\n\nSo which flavours did I get? Well thanks for asking, let me tell ya! You know how when a sign says “only 1 scoop per person” you immediately get more interested because deep down we are all little sheep suffering from FOMO who would hate to miss out on the next big thing? So naturally I got the “Black currant dream” (it’s a triple layer dream actually with vanilla ice cream, sorbet, and black currant ripple). And I was not disappointed! So creamy and at the same time that nice texture from sorbet and to die for black currant flavours.\n\nI paired the dream with vanilla rhubarb, a favourite and recommendation of the very friendly professional scooper. Creamy heaven with both the softness of vanilla and tartness of rhubarb 😍 She also shared that the character of the flavour changes over the summer since the local rhubarb will be at different stages in terms of ripeness and flavour. Wish I can come back and try it again later on to see how it might have changed!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.607867,12.990962
+        ]
+      }
+    },
+    
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Caput Mundi",
+        "date": "2023",
+        "address": "Sadly closed",
+        "rating": "8/10",
+        "image_url": "/images/caput-mundi.jpg",
+        "description": "Ok so it’s been more than a week since I left but I’ve had this saved as a draft ever since. It’s summer so it’s about time to make some new ice cream reviews even if it’s delayed. Here’s one from Stockholm 😍\n\nLeaving Stockholm is always a bit sad but luckily I have lots of lovely memories to make the farewell sting a bit less. One being this tasty ice cream from Caput Mundi by Hornstull. I had the cherry ice cream and chocolate with orange. The cherry was like a dream for a grandma like me! Just the right creamy consistency with lots of juicy pickled/conserved (?) cherries. The chocolate was also nice but not quite mind-blowing and the bits of orange peel were a tad too big and too chewy to my taste. Hence 8/10. Somehow I also had very high expectations from the fact that the gelato was kept in secret metal tins with lids. Usually that means high quality and that there’s a big focus on flavours rather than showing off (still true but not 10/10 true).\n\nWe didn’t eat the ice cream at the place but it’s cute and there are some seats outside in the sun. Of course Stockholm prices are a bit scary but I would still recommend this place. At the place, my ice cream buddy revealed that he doesn’t really like ice cream (shocking!), but I nonetheless appreciated the company and the pic! 🤗🍦"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.3137835,18.0811908
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Gelato Messina",
+        "date": "Feb 2020",
+        "address": "Gateway, 1 Macquarie Pl, Sydney NSW 2000, Australia",
+        "rating": "0/10",
+        "image_url": "/images/messina.jpg",
+        "description": "I’m leaving Sydney and angel Jas with some tears in my eyes but also with the memory of the amazing taste of the beautiful ice cream from Messina. It does make waiting for my Melbourne flight a little bit easier (or maybe not cos who knows when I will have Messina with her again?!💔)\n\nWell, if you’re in Sydney you should definitely make your way to Surry Hills and to ice cream heaven. There are multiple locations but this is the original one and if you’re lucky you might meet Jas (please give her a squeeze from me!). There’s a huge selection of flavours and they’re actually open until late which is helpful in a city where 45+ is common. After all, ice cream and heat don’t get along that well🍦 💦 \n\n Now to the important things; the Salted coconut and mango sorbet was amazing and I couldn’t believe it was a sorbet considering how creamy and soft it was. I’m not sure what’s in the Do yourself a flavour but it was chocolatey with yummie bits of cookies and it made my mouth water and more. Both flavours were amazing and the only negative thing really was a bit of ice in the salted coconut and mango sorbet, but hey that happens to the best of us so it’s still 10/10. Go here if you can!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -33.861328, 151.208389
+        ]
+      }
+    }, 
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Waffel oder Becher",
+        "date": "July 2018",
+        "address": "Spandauer Str. 2, 10178 Berlin",
+        "rating": "9/10",
+        "image_url": "/images/waffel-oder.jpg",
+        "description": "Some weekends ago Berlin was a bit better cos my mom was visiting ♥️ She made me go to places that I usually don't go to that often, like Mitte, and thank god for that cos I got to discover this gelato artisan in one of the courtyards in Hackesche Höfe! It was especially nice to enjoy the gelato in one of the green courtyards 😍 \n\n I got chocolate ice cream and strawberry sorbet as well as a lil taste of the salty caramel. The caramel was a dream and I wish I could have eaten the whole thing! The chocolate was a bit of a disappointment as it tasted too much like dry cacao rather than the rich and smooth 70 % chocolate that I had imagined. Now on to the the strawberry sorbet! Omg it was so amazing! It basically tasted like they simply had mushed some perfectly ripe and juicy strawberries and popped them in the freezer. Which happens to be how my grandparents made strawberry jam. So it was not only delicious, it was also a nostalgic trip straight back to my childhood 🐣 Scoops for €1,70 a piece is quite expensive compared to other ice cream shops in Berlin tho. This together with the dry and kinda boring chocolate sadly takes down the experience a notch. I really do recommend the strawberry sorbet though and the salty caramel was very very promising 🌸 Also, the name is everything!!! When working in the ice cream bizz, you are constantly expected to read peoples' mind and know if they want their scoops in a cone (Waffel) or a cup (Becher). Come on people! Just say how you like you're ice cream without us having to ask, merci! 🌹👍"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.521141,13.403770
+        ]
+      }
+    }           
   ]
 }
 

@@ -22,7 +22,7 @@ const customIcon = L.icon({
 
 import arcades from "./arcades.json"
 
-let zoom = ref(15)
+let zoom = ref(13)
 let center = ref<[number, number]>([52.511439, 13.468885])
 
 // Modal state
@@ -85,7 +85,7 @@ watch(showModal, (newVal) => {
 // Clean up event listeners on component unmount
 onMounted(() => {
   console.log('Arcades data:', arcades)
-  console.log('Number of features:', arcades.features?.length)
+  console.log('Number of ice cream reviews:', arcades.reviews?.length)
 })
 </script>
 
@@ -97,7 +97,7 @@ onMounted(() => {
     </div>
     <div>
       <h1>EIS EIS BABY!</h1>
-      <p>A map over Rebecca's favorite Ice Creams in Berlin</p>
+      <p>A map over Rebecca's favorite Ice Creams</p>
     </div>
     
     <!-- Map view and pins -->
@@ -110,7 +110,7 @@ onMounted(() => {
         ></l-tile-layer>
         
         <l-marker 
-          v-for="(arcade, index) in arcades.features" 
+          v-for="(arcade, index) in arcades.reviews" 
           :key="index"
           :lat-lng="getCoordinates(arcade.geometry.coordinates)"
           :icon="customIcon"
