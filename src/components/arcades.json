@@ -17,7 +17,61 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          55.607867,12.990962
+          11.607867,55.990962
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Mary's Milk Bar",
+        "date": "Dec 2016",
+        "address": "19 Grassmarket, Edinburgh EH1 2HS, United Kingdom",
+        "rating": "8/10",
+        "image_url": "/images/marys.jpg",
+        "description": "Edinburgh visade sig från sin sämre sida i helgen med vääääldigt mycket regn och blåst (to be fair var det också en del sol emellanåt). Men för att fly det hemska vädret gjorde jag det jag gör bäst; googlade 'best ice cream in [insert city]' och åt glass! Valet föll på Mary's Milk Bar i Old Town och det var ju himla fint för oj oj vad mysigt det var! De kassiskt brittiska enkelglasade fönstrena var immiga, inredningen ca 50-tal och personalen supercharmiga. De jobbade mer med 'milk ice cream' än klassisk vaniljsmak, kul. Glassen hade perfekt konsistens, men tyvärr inte särskilt bra fördelning av plain mjölkglass och smak. Jag tog Salted caramel och Mulled pear ripple, som smakade fantastiskt när en fick tillräckligt av swirlen av smak men som annars mest blev lite tråkig. Och tyvärr var det lite snålt på smakerna. Jag testade dock kompisarnas smaker och deras mörka choklad samt Peanut and cinnamon var helt fantastiska! En borde absolut gå till Mary's Milk Bar om en har vägarna förbi Skottlands huvudstad men tips skulle va att iallafall ta en smak som inte bara mest är mjölkglass."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.946835, -3.197403
+        ]
+      }
+    },
+
+     {
+      "type": "Review",
+      "properties": {
+        "name": "Jones Ice Cream",
+        "date": "Aug 2016",
+        "address": "Goltzstraße 3, 10781 Berlin",
+        "rating": "9/10",
+        "image_url": "/images/jones-ice-cream.jpg",
+        "description": "Mmm wow vad gott och vilka fantastiska smaker det fanns att välja på!! Jag tog Fudge choco caramel peanut och Grapefruit & earl grey (här kör de verkligen på more is more) och de var så goda! Trots alla ingredienser kändes smakerna inte spretiga utan väl sammansatta och balanserade. Just min kombo var inte ultimat men jag rekommenderar ändå båda smakerna varmt, fast separat dåra. Stort plus är den supertrevliga personalen och att de gör EGNA våfflor! 󾍌 Så gott! Hade blivit en tia om det inte vore för den något isiga konsistensen. Men absolut värt ett besök, särskilt för att testa alla spexiga smaker. Nästa gång ska jag ta cucumber & tonic eller kanske lemon & bkuberry jam. Spex deluxe! 🙃"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.490451, 13.353441
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
+        "name": "Mos Eisley",
+        "date": "Sept 2016",
+        "address": "Weserstr. 168, 12045 Berlin",
+        "rating": "6/10",
+        "image_url": "/images/mos-eisly.jpg",
+        "description": "Efter att sett en konstant kö utanför Mos Eisly hela sommaren kan jag inte direkt förneka att förväntningarna var höga. Tyvärr kanske lite för höga. Sista tuggan strut svaldes med tillfredställelse (det är ju ändå glass) men också med orden 'det var en tråkig strut'. Det är visserligen sällan strutar är en hit men efter en medioker glassupplevelse drar det onekligen ner den generella upplevelse ännu mer. Min chokladglass var okey men inte den bästa jag har ätit och även om Campari & grapefrukt var en spexig kombo var den inte lika lyckad som Jones spexiga smaker. Och hey sorbet behöver faktiskt inte vara isig... Däremot så var mitt sällskaps pistageglass helt magisk! Så gillar en det rekommenderas detta ställe, även så ifall en är i krokarna och vill käka glass på närliggande Tempelhof (i solnedgången rekommenderas särskilt). Helt klart godkänd glass men helheten drogs ner av halvtråkig lokal, tråkig strut och småtråkiga smaker."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.483582,13.440750
         ]
       }
     },
