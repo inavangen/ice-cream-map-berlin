@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
-import heroImg from '../assets/hero.png'
+import heroImg from '../assets/hero-rebecca.png'
 
 import "leaflet/dist/leaflet.css"
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
@@ -22,8 +22,8 @@ const customIcon = L.icon({
 
 import arcades from "./arcades.json"
 
-let zoom = ref(13)
-let center = ref<[number, number]>([52.511439, 13.468885])
+let zoom = ref(12)
+let center = ref<[number, number]>([52.50368118286133, 13.420980453491211])
 
 // Modal state
 const showModal = ref(false)
@@ -93,15 +93,15 @@ onMounted(() => {
 <template>
   <section id="center">
     <div class="hero">
-      <img :src="heroImg" class="base" width="170" height="179" alt="" />
+      <img :src="heroImg" class="base" alt="" style="padding-top: 50px;" />
     </div>
     <div>
-      <h1>EIS EIS BABY!</h1>
+      <h1 style="margin-top: -80px;">EIS EIS BABY!</h1>
       <p>A map over Rebecca's favorite Ice Creams</p>
     </div>
     
     <!-- Map view and pins -->
-    <div style="height: 600px; width: 100%; border: 4px solid #A34390; border-radius: 12px; overflow: hidden;">
+    <div style="height: 600px; width: 100%; border: 1px solid #A34390; border-radius: 8px; overflow: hidden;">
       <l-map ref="map" v-model:zoom="zoom" v-model:center="center" :useGlobalLeaflet="false">
         <l-tile-layer 
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
