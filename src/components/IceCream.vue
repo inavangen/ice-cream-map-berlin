@@ -170,7 +170,7 @@ onMounted(() => {
         <!-- Google Maps link -->
         <a 
           v-if="selectedLocation"
-          :href="`https://www.google.com/maps?q=${selectedLocation.geometry.coordinates[1]},${selectedLocation.geometry.coordinates[0]}`" 
+          :href="`https://www.google.com/maps?q=${selectedLocation.geometry.coordinates[0]},${selectedLocation.geometry.coordinates[1]}`" 
           target="_blank"
           class="modal-link"
         >
