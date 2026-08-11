@@ -25,6 +25,24 @@
     {
       "type": "Review",
       "properties": {
+        "name": "Katchi Ice Cream",
+        "date": "April 2016",
+        "address": "Oranienburger Str. 89, 10178 Berlin",
+        "rating": "7/10",
+        "image_url": "/images/katchi.jpg",
+        "description": "What a great moment! This is the first review posted directly on the Eis Eis baby map/ blog. Truly a dream has come through thanks to the excellent coding of my amazing girlfriend ❤️\n\nConsidering this significant moment, it’s a shame that the ice cream wasn’t 10/10. Not bad of course (cos you know I don’t have bad ice cream, duh) but just not that exciting. At least not the flavours I had. Perhaps my expectations were too high since I went to another of their shops for Ice Cream Week a few years ago, and that flavour was really special (there were nacho chips involved!!) \n\nSomething I really enjoyed though is that they offered regular scoops or small scoops so I naturally opted for three small scoops to be able to try as many flavours as possible. I went for passion fruit sorbet, tonka and raspberry, and dark chocolate. I’ve had a bit of passion fruit juice craze as of late, and I guess I was hoping for a similar taste experience where sour meets sweet together with some fun crunchy bits. This one was sweet but the sour kick didn’t really happen - and there were no fun crunchy bits 😔 I also found that the consistency was a bit off, like it had melted a bit too much so it was a bit gooey (as melted sorbet typically gets).  \n\nOverall, all ice cream had this consistency and it melted very quickly although it wasn’t that warm today so I can imagine that they melted slightly at some point. \n\nThe tonka raspberry was a nice combination of depth and freshness with a nice little surprise of white chocolate chunks. It could have had even more tonka but that’s how I always feel with this tasty lil bean. \n\nThe dark chocolate was nice but I would have enjoyed even more complex depth of the chocolate. It left me wishing for more since it looked so deliciously dark but then fell a bit flat. \n\nA highlight though was one of the flavours I got to try from my friends – mango and sticky coco (sticky rice 😋)! \n\nAs for the place, we didn’t stay long since we decided to sit under the cherry blossoms in the sunny park which was lovely. But there were some chairs where one could sit down to enjoy the ice cream. \n\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.523651123046875, 13.400899887084961
+        ]
+      }
+    },
+
+    {
+      "type": "Review",
+      "properties": {
         "name": "Mary's Milk Bar",
         "date": "Dec 2016",
         "address": "19 Grassmarket, Edinburgh EH1 2HS, United Kingdom",
