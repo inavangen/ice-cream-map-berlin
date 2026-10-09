@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
-import heroImg from '../assets/hero-rebecca.png'
+//import heroImg from '../assets/hero-rebecca.png'
 import logoImg from '../assets/logo-3d.png'
 
 import "leaflet/dist/leaflet.css"
