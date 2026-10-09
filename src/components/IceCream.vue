@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 //import heroImg from '../assets/hero-rebecca.png'
-import logoImg from '../assets/logo-3d.png'
+import logoImg from '../assets/logo-2d.png'
 
 import "leaflet/dist/leaflet.css"
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
