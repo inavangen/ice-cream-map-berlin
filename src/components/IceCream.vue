@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import heroImg from '../assets/hero-rebecca.png'
+import logoImg from '../assets/logo-3d.png'
 
 import "leaflet/dist/leaflet.css"
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
 
 import L from "leaflet"
 
-import customMarker from '../assets/marker2x.png'
+import customMarker from '../assets/3d-marker.png'
 
 // Create custom icon 
 const customIcon = L.icon({
   iconUrl: customMarker,
-  iconSize: [38, 62],
-  iconAnchor: [19, 62],
+  iconSize: [50, 99],
+  iconAnchor: [25, 99],
   popupAnchor: [0, -53],
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-  shadowSize: [31, 31],
-  shadowAnchor: [9, 31]
+  shadowSize: [50, 91],
+  shadowAnchor: [25, 91]
 })
 
 import arcades from "./arcades.json"
@@ -92,12 +93,16 @@ onMounted(() => {
 <!-- Header stuff -->
 <template>
   <section id="center">
-    <div class="hero">
+    <!--<div class="hero">
       <img :src="heroImg" class="base" alt="" style="padding-top: 50px;" />
+    </div>-->
+    <div class="logo" style="padding-top: 100px;">
+      <img :src="logoImg" class="base" alt="eis eis baby logo" width="400" />
     </div>
     <div>
-      <h1 style="margin-top: -80px;">EIS EIS BABY!</h1>
-      <p>A map over Rebecca's favorite Ice Creams</p>
+      <!--<h1 style="margin-top: -80px;">EIS EIS BABY!</h1> -->
+  
+      <p><b>A map over Rebecca's favorite Ice Creams</b></p>
     </div>
     
     <!-- Map view and pins -->
