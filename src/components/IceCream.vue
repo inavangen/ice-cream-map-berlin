@@ -140,6 +140,7 @@ onMounted(() => {
               <button class="popup-button" @click="openModal(arcade)">
                 Read full review
               </button>
+              
             </div>
           </l-popup>
         </l-marker>
@@ -191,26 +192,35 @@ onMounted(() => {
 
   <section id="next-steps">
     <div id="docs">
-      <h2>Who's behind this?</h2>
-      <p>This webpage is developed and designed by Ina and reviews are written by Rebecca. Got some feedback, or a suggest to where we should go next?</p>
-      <ul>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcuZ-BfYXPTlZ5Fmb_GV5JvcO1baCuWx48Cqc9Kof-3WPSNQ/viewform?usp=publish-editor" target="_blank">
-            Let us know!
-          </a>
-        </li>
-      </ul>
+    <h2>Who's behind this?</h2>
+
+    <p>This webpage is developed and designed by Ina and reviews are written by Rebecca. Got some feedback, or a suggestion for where we should go next?
+    <br><br></p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcuZ-BfYXPTlZ5Fmb_GV5JvcO1baCuWx48Cqc9Kof-3WPSNQ/viewform?usp=publish-editor"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="button_link">
+    <button>
+        <span class="button_top"> Let us Know! </span>
+    </button>
+    </a>
     </div>
+
+
+    
     <div id="social">
       <h2>Support the ice creams</h2>
-      <p>Ice creams are expensive. You can support our adventure to buy more ice creams with a small donation!</p>
-      <ul>
-        <li>
-          <a href="https://ko-fi.com/ina553388" target="_blank">
-            Buy us an ice cream!
-          </a>
-        </li>
-      </ul>
+      <p>Ice creams are expensive. If you like this webpage, and would like to support us on our ice cream adventures, you can can help us buy more ice creams with a small donation!
+      <br><br></p>
+      <a href="https://ko-fi.com/ina553388"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button_link">
+    <button>
+        <span class="button_top"> Buy us an ice cream! </span>
+    </button>
+    </a>
     </div>
   </section>
 
