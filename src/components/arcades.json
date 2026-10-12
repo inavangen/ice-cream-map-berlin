@@ -4,24 +4,7 @@
   "copyright": "All reviews are written by Rebecca.",
   "getlatlongfrom": "https://www.gps-coordinates.net/",
   "reviews": [
-    {
-      "type": "Review",
-      "properties": {
-        "name": "Empty",
-        "date": "01.01.2025",
-        "address": "Addrerss",
-        "rating": "0/10",
-        "image_url": "/images/favvo-glass.png",
-        "description": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.607867,55.990962
-        ]
-      }
-    },
-
+    
     {
       "type": "Review",
       "properties": {
@@ -161,7 +144,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.00, 0.00
+          52.51017379760742, 13.460822105407715
         ]
       }
     },
