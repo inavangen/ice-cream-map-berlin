@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 //import heroImg from '../assets/hero-rebecca.png'
-import logoImg from '../assets/logo-3d-orange.png'
+import logoImg from '../assets/logo-3d-pink.png'
 
 import "leaflet/dist/leaflet.css"
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet"
@@ -202,7 +202,7 @@ onMounted(() => {
     rel="noopener noreferrer"
     class="button_link">
     <button>
-        <span class="button_top"> Let us Know! </span>
+        <span class="button_top"> Let us know! </span>
     </button>
     </a>
     <br><br><br>
