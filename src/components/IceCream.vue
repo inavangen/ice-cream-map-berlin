@@ -23,8 +23,8 @@ const customIcon = L.icon({
 
 import arcades from "./arcades.json"
 
-let zoom = ref(12)
-let center = ref<[number, number]>([52.50368118286133, 13.420980453491211])
+let zoom = ref(5)
+let center = ref<[number, number]>([55.607867,12.990962])  // Center of Denmark
 
 // Modal state
 const showModal = ref(false)
@@ -192,8 +192,8 @@ onMounted(() => {
 
   <section id="next-steps">
     <div id="docs">
+    <img src="../assets/3dgif-pc.gif" alt="rotating ice cream gif" width="100" />
     <h2>Who's behind this?</h2>
-
     <p>This webpage is developed and designed by Ina and reviews are written by Rebecca. Got some feedback, or a suggestion for where we should go next?
     <br><br></p>
 
@@ -205,11 +205,13 @@ onMounted(() => {
         <span class="button_top"> Let us Know! </span>
     </button>
     </a>
-    </div>
-
+    <br><br><br>
+      <img src="../assets/emoji-smiley.gif" alt="rotating ice cream gif" width="50" />
+  </div>
 
     
     <div id="social">
+      <img src="../assets/3dgif-icecream.gif" alt="rotating ice cream gif" width="120" />
       <h2>Support the ice creams</h2>
       <p>Ice creams are expensive. If you like this webpage, and would like to support us on our ice cream adventures, you can can help us buy more ice creams with a small donation!
       <br><br></p>
@@ -223,6 +225,8 @@ onMounted(() => {
     </a>
     </div>
   </section>
+
+
 
   <div class="ticks"></div>
   <section id="spacer"></section>
